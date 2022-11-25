@@ -1,4 +1,4 @@
 #!/usr/bin/env groovy
-def infoShr(String cmnd = "slackSend", String clr = "#439FE0", String msg = "Build Successful") {
-  "${cmnd} color: ${clr}, message: ${msg}"
+def call(String clr = "#439FE0", String msg = "Build Successful") {
+  slackSend color:${clr}, message:${msg} 
 }
